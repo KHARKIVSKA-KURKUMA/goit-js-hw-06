@@ -49,3 +49,18 @@ a {
 .item_menu a:focus {
   color: rgb(33, 196, 33);
 }
+/* task 3 */
+.gallery {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+.gallery img {
+  width: 850px;
+  height: 500px;
+}
