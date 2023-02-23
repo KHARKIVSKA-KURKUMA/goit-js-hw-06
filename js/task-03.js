@@ -24,3 +24,7 @@ const galleryHTML = images
   })
   .join("");
 galleryEl.insertAdjacentHTML("beforeend", galleryHTML);
+
+// galleryEl.style.listStyle = 'none';
+// galleryEl.style.display = 'flex';
+// galleryEl.style.justifyContent = 'space-around';
