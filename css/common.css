@@ -30,12 +30,12 @@ ul {
   list-style: none;
 }
 .main_title {
-  font-size: 60px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 a {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 500;
   transition: 500ms linear;
 }
@@ -61,6 +61,6 @@ a {
   justify-content: center;
 }
 .gallery img {
-  width: 850px;
-  height: 500px;
+  width: 500px;
+  height: 350px;
 }
