@@ -9,14 +9,21 @@ const ingredients = [
 
 const ulEl = document.querySelector("#ingredients");
 
-const addIngredients = (array) =>
-  array.map((elem) => {
-    const itemEl = document.createElement("li");
-    itemEl.textContent = elem;
-    itemEl.style.fontSize = "30px";
-    itemEl.style.color = "rgb(125 22 225)";
-    return itemEl;
-  });
+// const addIngredients = (array) =>
+//   array.map((elem) => {
+//     const itemEl = document.createElement("li");
+//     itemEl.textContent = elem;
+//     itemEl.style.fontSize = "30px";
+//     itemEl.style.color = "rgb(125 22 225)";
+//     return itemEl;
+//   });
 
-ulEl.append(...addIngredients(ingredients));
+// ulEl.append(...addIngredients(ingredients));
 /* -------------------------------------------------------------------------- */
+const add = ingredients
+  .map((value) => {
+    return ` <li> ${value}
+</li>`;
+  })
+  .join("");
+ulEl.insertAdjacentHTML("beforeend", add);
